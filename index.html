@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Встраивание аудио и видео</title>
+	<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv-printshiv.min.js" type="text/javascript"></script><![endif]-->
+</head>
+<body>
+	<h1>Вставка видео и аудио</h1>
+		<p>В этом примере мы вставим в <abbr title="HyperText Markup Language">HTML</abbr> страницу видео и аудио с различными атрибутами.</p>
+	<h2>Видео с кроликом</h2>
+		<video controls width="600" height="400" loop muted poster="images/poster.png">
+			<source src="video/rabbit320.webm" type="video/webm">
+			<track label="Russian" kind="subtitles" srclang="ru" src="video/subtitles_ru.vtt" type="text/vtt" default />
+			<p>Ваш браузер не поддерживает <abbr title="HyperText Markup Language">HTML5</abbr> видео. Используйте <a href="video/rabbit320.webm" title="Видео про кролика">ссылку на видео</a> для доступа.</p>
+		</video>
+	<h2>Аудио</h2>
+		<audio controls>
+			<source src="audio/viper.mp3" type="audio/mp3">
+			<source src="audio/viper.ogg" type="audio/ogg">
+			<p>Ваш браузер не поддерживает <abbr title="HyperText Markup Language">HTML5</abbr> аудио. Используйте <a href="audio/viper.mp3" title="Аудио">ссылку на аудио</a> для доступа.</p>
+		</audio>
+</body>
+</html>
